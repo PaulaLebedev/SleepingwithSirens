@@ -7,6 +7,7 @@
 
 html {
   font-size: 100%;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 body {
@@ -131,6 +132,14 @@ header .hero-content img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid red;
+}
+
+#bio-section .bio-container:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 #bio-section .bio-container .bio-image {
@@ -138,9 +147,16 @@ header .hero-content img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: 1px solid green;
+}
+
+#bio-section .bio-container .image-align-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 #bio-section .bio-container .bio-content {
@@ -155,15 +171,37 @@ header .hero-content img {
 }
 
 #bio-section .bio-container .bio-content .content-wrapper {
-  width: 80%;
+  width: 90%;
   height: 100%;
   background-color: #de4735;
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 
 #bio-section .bio-container .bio-content .content-wrapper h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
+  font-weight: 600;
+  color: white;
+}
+
+#bio-section .bio-container .bio-content .content-wrapper p {
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05rem;
+  line-height: 150%;
+  opacity: 0.6;
+  color: white;
+}
+
+#bio-section .bio-container .bio-content .content-wrapper h3 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+}
+
+#bio-section .bio-container .content-align-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 /*# sourceMappingURL=style.css.map */
