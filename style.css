@@ -215,6 +215,7 @@ header .hero-content img {
       -ms-flex-pack: end;
           justify-content: flex-end;
   overflow: auto;
+  height: 100%;
 }
 
 @media screen and (max-width: 700px) {
