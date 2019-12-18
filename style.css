@@ -118,4 +118,52 @@ header .hero-content img {
   width: 25px;
   margin-right: 20px;
 }
+
+#bio-section {
+  width: 100%;
+  height: 100%;
+  background-color: #252525;
+}
+
+#bio-section .bio-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#bio-section .bio-container .bio-image {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#bio-section .bio-container .bio-content {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#bio-section .bio-container .bio-content .content-wrapper {
+  width: 80%;
+  height: 100%;
+  background-color: #de4735;
+  padding: 2rem;
+}
+
+#bio-section .bio-container .bio-content .content-wrapper h2 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
 /*# sourceMappingURL=style.css.map */
