@@ -24,7 +24,8 @@
       margin: auto;
     }
     @media screen and (max-width: 722px) {
-      width: 95%;
+      width: 90%;
+      text-align: center;
     }
     .ticket-content {
       height: 100%;
@@ -68,6 +69,9 @@
             letter-spacing: 0.1rem;
             font-size: 1.5rem;
             font-weight: 600;
+            @media screen and (max-width: 595px) {
+              text-align: center;
+            }
           }
         }
         .concert-details {

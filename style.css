@@ -354,7 +354,8 @@ header .hero-content img {
 
 @media screen and (max-width: 722px) {
   #ticket-section .ticket-wrapper {
-    width: 95%;
+    width: 90%;
+    text-align: center;
   }
 }
 
@@ -428,6 +429,12 @@ header .hero-content img {
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 595px) {
+  #ticket-section .ticket-wrapper .ticket-content .concert-wrapper .concert-name-wrapper .concert-name {
+    text-align: center;
+  }
 }
 
 #ticket-section .ticket-wrapper .ticket-content .concert-wrapper .concert-details {
