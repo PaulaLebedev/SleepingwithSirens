@@ -3,19 +3,32 @@
   height: 100%;
   background-color: $mainGrayColor;
   .music-wrapper {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    margin: auto;
+    @media screen and (max-width: 810px) {
+      flex-direction: column-reverse;
+      padding-top: 5rem;
+    }
     .play-button {
       padding-right: 2rem;
+      @media screen and (max-width: 810px) {
+        margin-top: 3rem;
+        padding-right: 0px;
+      }
     }
     .cta {
       color: $mainRedColor;
       font-weight: 900;
       font-size: 3rem;
+      @media screen and (max-width: 810px) {
+        font-size: 2rem;
+        text-align: center;
+      }
     }
   }
 }

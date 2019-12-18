@@ -71,15 +71,28 @@ header .hero-content .header-circle {
   z-index: 1;
 }
 
+@media screen and (max-width: 590px) {
+  header .hero-content .header-circle {
+    display: none;
+  }
+}
+
 header .hero-content img {
   position: absolute;
   z-index: 2;
+  width: 90%;
 }
 
 .official-links {
   width: 100vw;
   height: 100%;
-  padding: 20px 0px;
+  padding: 2rem 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .official-links {
+    padding: 2rem 0px;
+  }
 }
 
 .official-links .links-wrapper {
@@ -96,16 +109,22 @@ header .hero-content img {
   margin: auto;
 }
 
+@media screen and (max-width: 870px) {
+  .official-links .links-wrapper {
+    width: 95%;
+  }
+}
+
 .official-links .links-wrapper .item {
   width: 25%;
   opacity: 0.5;
 }
 
-.official-links .links-wrapper .item:hover {
+.official-links .links-wrapper:hover {
   opacity: 0.8;
 }
 
-.official-links .links-wrapper .item a {
+.official-links .links-wrapper a {
   text-decoration: none;
   color: #252525;
   display: -webkit-box;
@@ -116,9 +135,36 @@ header .hero-content img {
           align-items: center;
 }
 
-.official-links .links-wrapper .item a img {
+@media screen and (max-width: 850px) {
+  .official-links .links-wrapper a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.official-links .links-wrapper a img {
   width: 25px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .official-links .links-wrapper a img {
+    margin-right: 0px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .official-links .links-wrapper a img {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .official-links .links-wrapper a h3 {
+    display: none;
+  }
 }
 
 #bio-section {
@@ -135,11 +181,29 @@ header .hero-content img {
   display: flex;
 }
 
+@media screen and (max-width: 700px) {
+  #bio-section .bio-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #bio-section .bio-container:nth-child(even) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 700px) {
+  #bio-section .bio-container:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #bio-section .bio-container .bio-image {
@@ -153,10 +217,28 @@ header .hero-content img {
   overflow: auto;
 }
 
+@media screen and (max-width: 700px) {
+  #bio-section .bio-container .bio-image {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 #bio-section .bio-container .image-align-start {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+  #bio-section .bio-container .image-align-start {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 #bio-section .bio-container .bio-content {
@@ -170,11 +252,26 @@ header .hero-content img {
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 700px) {
+  #bio-section .bio-container .bio-content {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 #bio-section .bio-container .bio-content .content-wrapper {
   width: 90%;
   height: 100%;
   background-color: #de4735;
   padding: 4rem 2rem;
+}
+
+@media screen and (max-width: 700px) {
+  #bio-section .bio-container .bio-content .content-wrapper {
+    width: 100%;
+  }
 }
 
 #bio-section .bio-container .bio-content .content-wrapper h2 {
@@ -205,6 +302,16 @@ header .hero-content img {
           justify-content: flex-start;
 }
 
+@media screen and (max-width: 700px) {
+  #bio-section .bio-container .content-align-start {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
 #ticket-section {
   width: 100%;
   height: 100%;
@@ -215,6 +322,14 @@ header .hero-content img {
   background: transparent url(assets/lead-vocalist-tickets.png) no-repeat;
   background-size: contain;
   background-position-x: right;
+}
+
+@media screen and (max-width: 1070px) {
+  #ticket-section {
+    background: transparent url(assets/tickets-mobile-bg.png) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  }
 }
 
 #ticket-section .ticket-wrapper {
@@ -230,6 +345,19 @@ header .hero-content img {
   padding: 3rem 1rem;
 }
 
+@media screen and (max-width: 1070px) {
+  #ticket-section .ticket-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  #ticket-section .ticket-wrapper {
+    width: 95%;
+  }
+}
+
 #ticket-section .ticket-wrapper .ticket-content {
   height: 100%;
   display: -webkit-box;
@@ -240,8 +368,36 @@ header .hero-content img {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 595px) {
+  #ticket-section .ticket-wrapper .ticket-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: block;
+    margin: auto;
+  }
+}
+
 #ticket-section .ticket-wrapper .ticket-content .buy-button-wrapper {
   margin-top: 1.3rem;
+}
+
+@media screen and (max-width: 595px) {
+  #ticket-section .ticket-wrapper .ticket-content .buy-button-wrapper {
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid red;
+    background-color: #de4735;
+    border-radius: 5px;
+  }
 }
 
 #ticket-section .ticket-wrapper .ticket-content .buy-button-wrapper a {
@@ -312,7 +468,7 @@ header .hero-content img {
 }
 
 #music .music-wrapper {
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,16 +480,41 @@ header .hero-content img {
           justify-content: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  margin: auto;
+}
+
+@media screen and (max-width: 810px) {
+  #music .music-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 5rem;
+  }
 }
 
 #music .music-wrapper .play-button {
   padding-right: 2rem;
 }
 
+@media screen and (max-width: 810px) {
+  #music .music-wrapper .play-button {
+    margin-top: 3rem;
+    padding-right: 0px;
+  }
+}
+
 #music .music-wrapper .cta {
   color: #de4735;
   font-weight: 900;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 810px) {
+  #music .music-wrapper .cta {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 
 #footer {

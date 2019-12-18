@@ -26,10 +26,14 @@ header {
       background-color: $mainRedColor;
       border-radius: 50%;
       z-index: 1;
+      @media screen and (max-width: 590px) {
+        display: none;
+      }
     }
     img {
       position: absolute;
       z-index: 2;
+      width: 90%;
     }
   }
 }

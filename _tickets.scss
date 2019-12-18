@@ -8,19 +8,45 @@
   background: transparent url(assets/lead-vocalist-tickets.png) no-repeat;
   background-size: contain;
   background-position-x: right;
+  @media screen and (max-width: 1070px) {
+    background: transparent url(assets/tickets-mobile-bg.png) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  }
   .ticket-wrapper {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     padding: 3rem 1rem;
-
+    @media screen and (max-width: 1070px) {
+      width: 80%;
+      margin: auto;
+    }
+    @media screen and (max-width: 722px) {
+      width: 95%;
+    }
     .ticket-content {
       height: 100%;
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: 595px) {
+        flex-direction: column;
+        display: block;
+        margin: auto;
+      }
       .buy-button-wrapper {
         margin-top: 1.3rem;
+        @media screen and (max-width: 595px) {
+          margin-top: 2rem;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          border: 1px solid red;
+          background-color: $mainRedColor;
+          border-radius: 5px;
+        }
         a {
           text-decoration: none;
           text-transform: uppercase;
