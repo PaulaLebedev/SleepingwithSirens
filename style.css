@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -132,7 +133,6 @@ header .hero-content img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
 }
 
 #bio-section .bio-container:nth-child(even) {
@@ -150,7 +150,7 @@ header .hero-content img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  border: 1px solid green;
+  overflow: auto;
 }
 
 #bio-section .bio-container .image-align-start {
@@ -203,5 +203,105 @@ header .hero-content img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+#ticket-section {
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  overflow-x: hidden;
+  position: relative;
+  background: transparent url(assets/lead-vocalist-tickets.png) no-repeat;
+  background-size: contain;
+  background-position-x: right;
+}
+
+#ticket-section .ticket-wrapper {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 1rem;
+}
+
+#ticket-section .ticket-wrapper .ticket-content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#ticket-section .ticket-wrapper .ticket-content .buy-button-wrapper {
+  margin-top: 1.3rem;
+}
+
+#ticket-section .ticket-wrapper .ticket-content .buy-button-wrapper a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #de4735;
+  color: white;
+  padding: 1.7rem;
+  border-radius: 5px;
+}
+
+#ticket-section .ticket-wrapper .ticket-content .concert-wrapper {
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#ticket-section .ticket-wrapper .ticket-content .concert-wrapper .concert-name-wrapper {
+  margin-bottom: 0.8rem;
+}
+
+#ticket-section .ticket-wrapper .ticket-content .concert-wrapper .concert-name-wrapper .concert-name {
+  color: §mainGrayColor;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#ticket-section .ticket-wrapper .ticket-content .concert-wrapper .concert-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#ticket-section .ticket-wrapper .ticket-content .concert-wrapper .concert-details .concert-date {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #de4735;
+  opacity: 0.8;
+}
+
+#ticket-section .ticket-wrapper .ticket-content .concert-wrapper .concert-details .concert-location {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #de4735;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=style.css.map */
